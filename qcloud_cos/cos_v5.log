@@ -1,0 +1,98 @@
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:75] INFO config parameter-> appid: None, region: cos.ap-guangzhou
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:205] INFO put object, url=:http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com/test.txt ,headers=:{'x-cos-storage-class': 'STANDARD', 'Cache-Control': 'no-cache', 'Content-Disposition': 'download.txt'}
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:145] INFO type(url)=<class 'str'>
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:67] DEBUG format str: put
+/test.txt
+
+x-cos-security-token=&x-cos-storage-class=STANDARD
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:75] DEBUG str_to_sign: sha1
+1521598713;1521608773
+d6c7b54a309eb589a7b76c97ccd28b118bcbd2ab
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:78] DEBUG sign_key: c385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:79] DEBUG sign: 05986ed28b0088354ca2e4c6a429bef15628425e
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:90] DEBUG sign_keyc385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:91] DEBUG q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token;x-cos-storage-class&q-url-param-list=&q-signature=05986ed28b0088354ca2e4c6a429bef15628425e
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:92] DEBUG request headers: {'User-Agent': 'cos-python-sdk-v5.3.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-cos-storage-class': 'STANDARD', 'Cache-Control': 'no-cache', 'Content-Disposition': 'download.txt', 'x-cos-security-token': '', 'Content-Length': '27', 'Authorization': 'q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token;x-cos-storage-class&q-url-param-list=&q-signature=05986ed28b0088354ca2e4c6a429bef15628425e'}
+Wed, 21 Mar 2018 10:19:33 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com
+Wed, 21 Mar 2018 10:19:33 connectionpool.py[line:396] DEBUG http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com:80 "PUT /test.txt HTTP/1.1" 200 0
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:205] INFO put object, url=:http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com/test.txt ,headers=:{'Cache-Control': 'no-cache', 'Content-Disposition': 'download.txt'}
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:145] INFO type(url)=<class 'str'>
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:67] DEBUG format str: put
+/test.txt
+
+x-cos-security-token=
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:75] DEBUG str_to_sign: sha1
+1521598713;1521608773
+07115353584e3803bdd919025b23f78b03611255
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:78] DEBUG sign_key: c385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:79] DEBUG sign: 8455403ecd92e43eb7935d9c284bcdae32eb8425
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:90] DEBUG sign_keyc385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:91] DEBUG q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token&q-url-param-list=&q-signature=8455403ecd92e43eb7935d9c284bcdae32eb8425
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:92] DEBUG request headers: {'User-Agent': 'cos-python-sdk-v5.3.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Content-Disposition': 'download.txt', 'x-cos-security-token': '', 'Content-Length': '7', 'Authorization': 'q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token&q-url-param-list=&q-signature=8455403ecd92e43eb7935d9c284bcdae32eb8425'}
+Wed, 21 Mar 2018 10:19:33 connectionpool.py[line:396] DEBUG http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com:80 "PUT /test.txt HTTP/1.1" 200 0
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:235] INFO get object, url=:http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com/test.txt ,headers=:{}
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:145] INFO type(url)=<class 'str'>
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:67] DEBUG format str: get
+/test.txt
+
+x-cos-security-token=
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:75] DEBUG str_to_sign: sha1
+1521598713;1521608773
+ff2f2298f8b7d72d2f502ed3337ebc1b32a8b619
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:78] DEBUG sign_key: c385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:79] DEBUG sign: 2feafedf903fe367af2e10e1bd5e8770ac866f3e
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:90] DEBUG sign_keyc385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:91] DEBUG q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token&q-url-param-list=&q-signature=2feafedf903fe367af2e10e1bd5e8770ac866f3e
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:92] DEBUG request headers: {'User-Agent': 'cos-python-sdk-v5.3.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-cos-security-token': '', 'Authorization': 'q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token&q-url-param-list=&q-signature=2feafedf903fe367af2e10e1bd5e8770ac866f3e'}
+Wed, 21 Mar 2018 10:19:33 connectionpool.py[line:396] DEBUG http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com:80 "GET /test.txt HTTP/1.1" 200 7
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:235] INFO get object, url=:http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com/test.txt ,headers=:{}
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:145] INFO type(url)=<class 'str'>
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:67] DEBUG format str: get
+/test.txt
+
+x-cos-security-token=
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:75] DEBUG str_to_sign: sha1
+1521598713;1521608773
+ff2f2298f8b7d72d2f502ed3337ebc1b32a8b619
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:78] DEBUG sign_key: c385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:79] DEBUG sign: 2feafedf903fe367af2e10e1bd5e8770ac866f3e
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:90] DEBUG sign_keyc385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:91] DEBUG q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token&q-url-param-list=&q-signature=2feafedf903fe367af2e10e1bd5e8770ac866f3e
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:92] DEBUG request headers: {'User-Agent': 'cos-python-sdk-v5.3.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-cos-security-token': '', 'Authorization': 'q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token&q-url-param-list=&q-signature=2feafedf903fe367af2e10e1bd5e8770ac866f3e'}
+Wed, 21 Mar 2018 10:19:33 connectionpool.py[line:396] DEBUG http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com:80 "GET /test.txt HTTP/1.1" 200 7
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:235] INFO get object, url=:http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com/not_exist.txt ,headers=:{}
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:145] INFO type(url)=<class 'str'>
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:67] DEBUG format str: get
+/not_exist.txt
+
+x-cos-security-token=
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:75] DEBUG str_to_sign: sha1
+1521598713;1521608773
+b2e63bb1d286bfda03b4319c8e5a68f621b5ab3f
+
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:78] DEBUG sign_key: c385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:79] DEBUG sign: 83a0d8fb22075272e51babb218fa9f3cac3b22ad
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:90] DEBUG sign_keyc385d9d2e1ab1fcdf7df368ab81e70c2d58efdee
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:91] DEBUG q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token&q-url-param-list=&q-signature=83a0d8fb22075272e51babb218fa9f3cac3b22ad
+Wed, 21 Mar 2018 10:19:33 cos_auth.py[line:92] DEBUG request headers: {'User-Agent': 'cos-python-sdk-v5.3.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-cos-security-token': '', 'Authorization': 'q-sign-algorithm=sha1&q-ak=AKIDc5LNBmpJEvPeeOA88E6kFVWKtEKBsCTY&q-sign-time=1521598713;1521608773&q-key-time=1521598713;1521608773&q-header-list=x-cos-security-token&q-url-param-list=&q-signature=83a0d8fb22075272e51babb218fa9f3cac3b22ad'}
+Wed, 21 Mar 2018 10:19:33 connectionpool.py[line:208] DEBUG Starting new HTTP connection (2): iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com
+Wed, 21 Mar 2018 10:19:33 connectionpool.py[line:396] DEBUG http://iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com:80 "GET /not_exist.txt HTTP/1.1" 404 481
+Wed, 21 Mar 2018 10:19:33 cos_client.py[line:183] ERROR <?xml version='1.0' encoding='utf-8' ?>
+<Error>
+	<Code>NoSuchKey</Code>
+	<Message>The specified key does not exist.</Message>
+	<Resource>iifanhua1-1253929221.cos.ap-guangzhou.myqcloud.com/not_exist.txt</Resource>
+	<RequestId>NWFiMWMxMzVfNjNhYTk0MGFfOWM4ZV84NjE5Y2U=</RequestId>
+	<TraceId>OGVmYzZiMmQzYjA2OWNhODk0NTRkMTBiOWVmMDAxODc0OWRkZjk0ZDM1NmI1M2E2MTRlY2MzZDhmNmI5MWI1OTlmZDNiMzc3MTY4YjczMjMxYWY1Mjc0ODgyOTJkZTNlNjI2MWIxZjc0MTRlMTM2ZGVlZTY4Y2ZiNGExOGI0MjE=</TraceId>
+</Error>
+
+
